@@ -50,9 +50,6 @@ def salvar_valor_editado():
 
     
 
-    
-    
-    
 def excluir_dados():
     linha = segunda_tela.tableWidget.currentRow()
     segunda_tela.tableWidget.removeRow(linha)
