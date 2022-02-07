@@ -139,7 +139,7 @@ def chama_segunda_tela():
    
      
 
-  
+
         
 
 app=QtWidgets.QApplication([])

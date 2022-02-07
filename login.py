@@ -22,11 +22,12 @@ def entrar_sistema():
     if senha == senha_banco[0][0]:
         formulario.show()
         teladelogin.close()
-        login.setText('')
-        senha.setText('')
+                
 
     else:
         teladelogin.incorreta.setText("LOGIN ou SENHA incorretos!")
+        login.setText('')
+        senha.setText('')
 
 
 
