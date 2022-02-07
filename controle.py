@@ -7,7 +7,7 @@ numero_id = 0
 banco = mysql.connector.connect(
     host="localhost",
     user="root",
-    passwd="Gustavo1324_",
+    passwd="gustavo1324",
     database="tabela_registro"
 )
 def editar_dados():
@@ -29,6 +29,7 @@ def editar_dados():
     tela_editar.lineEdit_4.setText(str(produto[0][3]))
     tela_editar.lineEdit_5.setText(str(produto[0][4]))
     numero_id = valor_id
+
 
 
 def salvar_valor_editado():
@@ -87,7 +88,7 @@ def gerar_pdf():
         pdf.drawString(410,750 - y, str(dados_lidos[i][4]))
 
     pdf.save()
-    print("PDF FOI GERADO COM SUCESSO!")
+    print('PDF FOI GERADO COM SUCESSO!')
 
 def funcao_principal():
     linha1 = formulario.lineEdit.text()
